@@ -22,7 +22,7 @@ export default function App() {
 
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-cyan-500/30 selection:text-cyan-400 relative overflow-x-hidden transition-colors duration-300 dark:bg-slate-950 dark:text-slate-200 light:bg-slate-50 light:text-slate-900">
+      <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-200 font-sans selection:bg-cyan-500/30 selection:text-cyan-400 relative overflow-x-hidden transition-colors duration-300">
         {/* Custom Interactive Fluid Cursor */}
         <CustomCursor />
 

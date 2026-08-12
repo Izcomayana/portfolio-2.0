@@ -11,7 +11,10 @@ interface ProjectsProps {
 export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
   const [filterCategory, setFilterCategory] = useState<string>('All');
 
-  const categories = ['All', 'Healthcare', 'Fintech', 'Editorial'];
+  const categories = [
+    'All',
+    ...Array.from(new Set(portfolioData.projects.map((p) => p.category))),
+  ];
 
   const filteredProjects =
     filterCategory === 'All'
@@ -19,7 +22,7 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
       : portfolioData.projects.filter((p) => p.category === filterCategory);
 
   return (
-    <section id="projects" className="py-20 bg-slate-50/50 dark:bg-slate-900/30 border-y border-slate-200/60 dark:border-slate-800/60 relative">
+    <section id="projects" className="py-20 bg-slate-100/50 dark:bg-slate-900/30 border-y border-slate-200/60 dark:border-slate-800/60 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3">
@@ -30,7 +33,7 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
             Key Software Projects
           </p>
           <p className="text-sm text-slate-600 dark:text-slate-400">
-            Real-world enterprise applications built for NHS compliance, medical research publishing, digital editorial media, and fintech rewards.
+            Real-world applications built for NHS compliance, medical research publishing, digital editorial media, and workspace team collaboration.
           </p>
           <div className="w-12 h-1 bg-cyan-500 rounded-full mx-auto" />
         </div>

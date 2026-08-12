@@ -97,12 +97,12 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Direct Connect Quick Card */}
-            <div className="pt-2 bg-slate-900/40 border border-slate-800 p-5 rounded-2xl flex items-center justify-between max-w-lg">
+            <div className="pt-2 bg-slate-100 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 p-5 rounded-2xl flex items-center justify-between max-w-lg">
               <div className="min-w-0 pr-2">
                 <p className="text-[10px] text-slate-500 uppercase font-bold tracking-widest mb-1">
                   Let&apos;s Connect
                 </p>
-                <p className="text-xs sm:text-sm font-mono font-medium text-slate-200 truncate">
+                <p className="text-xs sm:text-sm font-mono font-medium text-slate-900 dark:text-slate-200 truncate">
                   {portfolioData.email}
                 </p>
               </div>
@@ -111,7 +111,7 @@ export const Hero: React.FC = () => {
                   href={portfolioData.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2.5 bg-slate-800 rounded-full text-slate-300 hover:text-cyan-400 hover:bg-slate-700 transition-colors"
+                  className="p-2.5 bg-slate-200 dark:bg-slate-800 rounded-full text-slate-700 dark:text-slate-300 hover:text-cyan-500 dark:hover:text-cyan-400 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors"
                   aria-label="GitHub"
                 >
                   <Github className="w-4 h-4" />
@@ -120,7 +120,7 @@ export const Hero: React.FC = () => {
                   href={portfolioData.linkedinUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2.5 bg-slate-800 rounded-full text-slate-300 hover:text-cyan-400 hover:bg-slate-700 transition-colors"
+                  className="p-2.5 bg-slate-200 dark:bg-slate-800 rounded-full text-slate-700 dark:text-slate-300 hover:text-cyan-500 dark:hover:text-cyan-400 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="w-4 h-4" />

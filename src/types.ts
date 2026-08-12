@@ -9,7 +9,7 @@ export interface Project {
   githubUrl: string;
   image: string;
   featured: boolean;
-  category: 'Healthcare' | 'Fintech' | 'Editorial' | 'SaaS';
+  category: 'Healthcare' | 'Fintech' | 'Editorial' | 'SaaS' | 'Workspace';
   keyFeatures?: string[];
   architectureHighlights?: string[];
 }

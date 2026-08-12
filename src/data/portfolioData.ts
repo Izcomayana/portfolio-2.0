@@ -1,9 +1,9 @@
 import { PortfolioData } from '../types';
 
 import medilogicImg from '../assets/images/medilogic_preview_1786533444255.jpg';
-import gregoryJournalImg from '../assets/images/gregory_journal_1786533459451.jpg';
-import rexBlogImg from '../assets/images/rex_blog_1786533471795.jpg';
-import balanceeRewardsImg from '../assets/images/balancee_rewards_1786533487761.jpg';
+import gregoryJournalImg from '../assets/images/gregory_journal_preview_1786536298514.jpg';
+import rexBlogImg from '../assets/images/rex_blog_preview_1786536281348.jpg';
+import zuriChatImg from '../assets/images/zuri_chat_preview_1786536311887.jpg';
 import developerAvatarImg from '../assets/images/developer_avatar_1786533500488.jpg';
 
 export const portfolioData: PortfolioData = {
@@ -183,29 +183,29 @@ export const portfolioData: PortfolioData = {
       ],
     },
     {
-      id: 'balancee-rewards',
-      title: 'Balancee Rewards Summary',
-      subtitle: 'Interactive Fintech Cashback & Rewards Portal',
+      id: 'zuri-chat',
+      title: 'Zuri Chat',
+      subtitle: 'Workspace Web Application',
       description:
-        'Interactive Rewards Summary Page where customers can track earnings, view cashback history, and cash out rewards directly or via promo codes.',
+        'A Workspace Web App powered by React and Node.js.',
       extendedDescription:
-        'A customer-facing financial dashboard allowing users to visualize cashback rewards history, manage promotional codes, track direct payout statuses, and view breakdown analytics of earned points in real time.',
-      techStack: ['Radix UI', 'React', 'Tailwind CSS', 'TypeScript'],
-      liveUrl: 'https://rewardsumm.vercel.app/',
-      githubUrl: 'https://github.com/Izcomayana/balancee-rewards-summary',
-      image: balanceeRewardsImg,
+        'Zuri Chat is an open-source workspace collaboration web application designed to connect remote teams with channels, messaging, and custom plugin extensions. Powered by React, Redux, and Bootstrap on the frontend, with Node.js and Express.js on the backend.',
+      techStack: ['React', 'Redux', 'Bootstrap', 'Node.js', 'Express.js'],
+      liveUrl: 'https://www.zuri.chat/',
+      githubUrl: 'https://github.com/zurichat/zc_main',
+      image: zuriChatImg,
       featured: true,
-      category: 'Fintech',
+      category: 'Workspace',
       keyFeatures: [
-        'Interactive earnings chart and financial summary metrics',
-        'Promo code redemption modal with instant validation UI',
-        'Cashout options via bank transfer or gift vouchers',
-        'Transaction history ledger with status filters',
+        'Team channels and real-time direct messaging',
+        'Redux store state management for messaging synchronization',
+        'Bootstrap responsive layout and custom plugin system',
+        'Node.js and Express backend API integration',
       ],
       architectureHighlights: [
-        'Radix UI primitive hooks for accessible modal interactions',
-        'Interactive financial state handling and mathematical formatting',
-        'High contrast design palette for financial clarity',
+        'Modular micro-frontend plugin architecture',
+        'Real-time communication channels and state hydration',
+        'Clean component layout built with React, Redux, and Bootstrap',
       ],
     },
   ],

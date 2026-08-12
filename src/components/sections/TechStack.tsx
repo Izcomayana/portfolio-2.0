@@ -51,19 +51,19 @@ export const TechStack: React.FC = () => {
         </div>
 
         {/* Featured Core Badges Row */}
-        <div className="mt-10 p-5 rounded-2xl bg-slate-900/40 border border-slate-800 backdrop-blur-md">
+        <div className="mt-10 p-5 rounded-2xl bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 backdrop-blur-md">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-2 text-sm font-bold text-slate-900 dark:text-white">
-              <Sparkles className="w-4 h-4 text-cyan-400" />
+              <Sparkles className="w-4 h-4 text-cyan-500 dark:text-cyan-400" />
               <span>Primary Enterprise Stack:</span>
             </div>
             <div className="flex flex-wrap items-center gap-2">
               {portfolioData.coreTechStack.map((tech) => (
                 <span
                   key={tech}
-                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-mono font-bold bg-slate-900 text-cyan-400 border border-cyan-500/30 shadow-xs"
+                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-mono font-bold bg-slate-100 dark:bg-slate-900 text-cyan-700 dark:text-cyan-400 border border-cyan-500/30 shadow-xs"
                 >
-                  <Check className="w-3 h-3 text-cyan-400" />
+                  <Check className="w-3 h-3 text-cyan-500 dark:text-cyan-400" />
                   {tech}
                 </span>
               ))}
