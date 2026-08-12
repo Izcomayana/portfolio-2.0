@@ -112,7 +112,7 @@ export const portfolioData: PortfolioData = {
         'A secure, intelligent platform for managing clinical waste transport, medical deliveries, and NHS-compliant reporting.',
       extendedDescription:
         'Medilogic streamlines healthcare transport workflows by providing real-time tracking, chain-of-custody compliance auditing, and automated report generation for NHS medical waste transport. Designed with strict security, fault tolerance, and responsive operational dashboards.',
-      techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'REST API'],
+      techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'REST API', 'Python'],
       liveUrl: 'https://medilogic.vercel.app/',
       githubUrl: 'https://github.com/Izcomayana/medilogic',
       image: medilogicImg,
